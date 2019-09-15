@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
-import Wrapper from './components/Wrapper/index';
-import SearchBar from './components/searchbar/index';
 
-class App extends Component {
-  render = () => {
+import SearchBar from './components/searchbar';
+
+class App extends React.Component {
+  render() {
     return (
-      <Wrapper>
-      <div className="App">
-        <header className="App-header">
-  
-        </header>
-      </div>
-
-      <SearchBar>Youtube Search engine coming soon!</SearchBar>
-  
-      </Wrapper>
+        <div className='ui container' style={{marginTop: '1em'}}>
+            <SearchBar handleFormSubmit={this.handleSubmit}/>
+        </div>
     )
-  }
+}
 }
 
 export default App;
