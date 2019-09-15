@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Search from '../searchbar/index';
-import Search from 'antd/lib/transfer/search';
+// import SearchBar from '../searchbar/index';
+
 
 
 class AppHome extends Component {
   render = () => {
     return (< Wrapper>
 
-    <Search />
+   {/* <SearchBar></SearchBar> */}
     </Wrapper>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Wrapper from './components/Wrapper/index';
+import SearchBar from './components/searchbar/index';
 
 class App extends Component {
   render = () => {
@@ -11,7 +12,8 @@ class App extends Component {
   
         </header>
       </div>
-      
+
+      <SearchBar>Youtube Search engine coming soon!</SearchBar>
   
       </Wrapper>
     )
