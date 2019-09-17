@@ -2,7 +2,7 @@ import React from 'react';
 
 class Searchbar extends React.Component {
     state = {
-        term: 'search'
+        term: ''
     };
     handleChange = (event) => {
         this.setState({
@@ -16,7 +16,7 @@ class Searchbar extends React.Component {
 
     render() {
         return (
-            <div className='ui search-bar'>
+            <div className='search-bar ui segment'>
                 <form onSubmit={this.handleSubmit} className='ui form'>
                     <div className='field'>
                         <label htmlFor="video-search"></label>
