@@ -2,11 +2,11 @@
 
 .video-item {
   display: flex !important;
-  align-items:  left !important;
+  align-items:  center !important;
   display: initial;
   position: relative;
-  left: 30px;
   cursor: pointer;
+  min-width: 250px;
 
 }
 
