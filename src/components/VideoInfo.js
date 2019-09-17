@@ -1,6 +1,7 @@
 // small description unit of video playing same width as video above it
 
 import React from 'react';
+import 'antd/dist/antd.css';
 
 const VideoInfo = ({video}) => {
     if (!video) {
@@ -14,7 +15,7 @@ const VideoInfo = ({video}) => {
             <div className='ui embed'>
                 <iframe src={videoSrc} allowFullScreen title='Video player'/>
             </div>
-            <div className='ui segment'>
+            <div className=''>
                 <h4 className='ui header'>{video.snippet.title}</h4>
                 <p>{video.snippet.description}</p>
             </div>

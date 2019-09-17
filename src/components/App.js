@@ -4,6 +4,11 @@ import api from '../api/api';
 import VideoList from './VideoList';
 import VideoInfo from './VideoInfo';
 
+import { Layout } from 'antd';
+
+const { Header, Sider, Content } = Layout;
+
+
 
 class App extends React.Component {
     state = {
@@ -25,7 +30,8 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className='ui container' style={{marginTop: '1em'}}>
+            
+            <div className='container' style={{marginTop: '2em'}}>
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
                 <div className='ui grid'>
                     <div className="ui row">
@@ -38,6 +44,8 @@ class App extends React.Component {
                     </div>
                 </div>
             </div>
+
+            
         )
     }
 }

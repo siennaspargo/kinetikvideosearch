@@ -5,6 +5,7 @@ import { Input } from 'antd';
 
 
 
+
 class Searchbar extends React.Component {
     state = {
         term: ''
@@ -21,8 +22,8 @@ class Searchbar extends React.Component {
 
     render() {
         return (
-            <div className='search-bar ui fluid input'>
-                <form onSubmit={this.handleSubmit} className='ui form'>
+            <div className='search-bar fluid input'>
+                <form onSubmit={this.handleSubmit} className='form'>
                     <div className='field'>
                         <label htmlFor="video-search"></label>
                         <Input placeholder="search youtube" allowClear onChange={this.handleChange} name='video-search' type="text" value={this.state.term}/>

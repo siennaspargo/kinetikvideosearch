@@ -3,7 +3,7 @@
 import React from 'react';
 import Videoiframe from './VideoIframe';
 import 'antd/dist/antd.css';
-import { List, Typography } from 'antd';
+import { List } from 'antd';
 
 const VideoList = ({videos , handleVideoSelect}) => {
     const renderedVideos =  videos.map((video) => {
@@ -12,6 +12,7 @@ const VideoList = ({videos , handleVideoSelect}) => {
 
     return <div>
     <List size ="large"
+    float
     bordered
     dataSource={renderedVideos}
     renderItem={item => <List.Item>{item}</List.Item>}

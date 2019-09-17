@@ -1,10 +1,16 @@
+@import '~antd/dist/antd.css';
+
 .video-item {
   display: flex !important;
-  align-items: center !important;
+  align-items:  left !important;
+  display: initial;
+  position: relative;
+  left: 30px;
   cursor: pointer;
+
 }
 
 .video-item.item img {
-  max-width: 100px;
-  max-height: 150px ;
+  max-width: 200px;
 }
+
