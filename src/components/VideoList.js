@@ -12,7 +12,6 @@ const VideoList = ({videos , handleVideoSelect}) => {
 
     return <div>
     <List size ="large"
-    float
     bordered
     dataSource={renderedVideos}
     renderItem={item => <List.Item>{item}</List.Item>}
