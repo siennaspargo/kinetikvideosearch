@@ -33,7 +33,7 @@
       "last 1 safari version"
     ]
   },
-  "main": "index.js",
+  "main": "App.js",
   "repository": "https://github.com/siennaspargo/kinetikvideosearch.git",
   "author": "SiennaS <ssienna48@gmail.com>",
   "license": "MIT"
