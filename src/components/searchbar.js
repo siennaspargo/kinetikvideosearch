@@ -4,8 +4,6 @@ import 'antd/dist/antd.css';
 import { Input } from 'antd';
 
 
-
-
 class Searchbar extends React.Component {
     state = {
         term: ''
