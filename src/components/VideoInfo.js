@@ -12,11 +12,11 @@ const VideoInfo = ({video}) => {
     console.log(typeof(video));
     return (
         <div>
-            <div className='ui embed'>
+            <div className='embed'>
                 <iframe src={videoSrc} allowFullScreen title='Video player'/>
             </div>
             <div className=''>
-                <h4 className='ui header'>{video.snippet.title}</h4>
+                <h4 className='header'>{video.snippet.title}</h4>
                 <p>{video.snippet.description}</p>
             </div>
         </div>

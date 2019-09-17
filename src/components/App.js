@@ -33,17 +33,15 @@ class App extends React.Component {
             
             <div className='container' style={{marginTop: '2em'}}>
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
-                <div className='ui grid'>
-                    <div className="ui row">
-                        <div className="eleven wide column">
+                                {/* Video Item Frame */}
+                        <div className="container" style={{ marginTop: '5em', marginLeft: ' 10em', padding: '0px', maxWidth: '175px', maxLength: '300px'}}>
                             <VideoInfo video={this.state.selectedVideo}/>
                         </div>
-                        <div className="five wide column">
+                        <div className="container" style={{marginTop: '2em', marginLeft: '0em', padding: '10px' }}>
                             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
                         </div>
                     </div>
-                </div>
-            </div>
+
 
             
         )
