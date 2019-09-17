@@ -1,5 +1,10 @@
 import React from 'react';
 
+import 'antd/dist/antd.css';
+import { Input } from 'antd';
+
+
+
 class Searchbar extends React.Component {
     state = {
         term: ''
@@ -16,11 +21,11 @@ class Searchbar extends React.Component {
 
     render() {
         return (
-            <div className='search-bar ui segment'>
+            <div className='search-bar ui fluid input'>
                 <form onSubmit={this.handleSubmit} className='ui form'>
                     <div className='field'>
                         <label htmlFor="video-search"></label>
-                        <input onChange={this.handleChange} name='video-search' type="text" value={this.state.term}/>
+                        <Input placeholder="search youtube" allowClear onChange={this.handleChange} name='video-search' type="text" value={this.state.term}/>
                     </div>
                 </form>
             </div>
