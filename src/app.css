@@ -1,9 +1,18 @@
-@import '~antd/dist/antd.css';
+@import '~antd/dist/antd.less';
+
+
 
 .App {
   text-align: center;
 }
 
+.Header, .SearchBar {
+  color: ffffff;
+}
+
+header.ant-layout-header {
+  color: ffffff;
+}
 
 body {
   margin: 0;

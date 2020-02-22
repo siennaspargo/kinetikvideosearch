@@ -33,7 +33,7 @@ class App extends React.Component {
         <Layout>
         {/* Search Bar Input */}
         {/* <div className="container" style={{ marginTop: "2em" }}> */}
-          <Header>
+          <Header color='#ffffff'>
           <SearchBar handleFormSubmit={this.handleSubmit} />
           </Header>
 
