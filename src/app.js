@@ -29,7 +29,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div classname="app">
+      <div className="app">
         <Layout>
         {/* Search Bar Input */}
         {/* <div className="container" style={{ marginTop: "2em" }}> */}
